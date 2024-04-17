@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.LoginPage1 {
+    width: 75%;
+    margin: auto;
+}
+
+/***********RIGHT BG SECTION CSS START************/
+
+.LoginPage1 .leftPanel img {
+    width: 100%;
+    height: 500px;
+}
+
+/************FORM SECTION CSS START*************/
+
+.LoginPage1 .rightPanel {
+    background-color: gray;
+    padding: 1.5rem;
+}
+
+.LoginPage1 .rightPanel img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 1rem auto;
+    display: block;
+}
+
+.LoginPage1 .rightPanel .register {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.LoginPage1 .rightPanel .formWrapper .formHead {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.LoginPage1 .rightPanel .innerformwrapper {
+    position: relative;
+}
+
+.LoginPage1 .rightPanel .innerformwrapper .eyepass {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.LoginPage1 .rightPanel .formWrapper input[type="email"],input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.9rem;
+    border-radius: 6px;
+}
+
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.9rem;
+    border-radius: 6px;
+}
+
+.LoginPage1 .rightPanel .fpass a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 1.1rem;
+    display: block;
+}
+
+.LoginPage1 .formWrapper .Loginbtn {
+    width: 40%;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 6px;
+    padding: 0.3rem 0.7rem;
+    color: #ffffff;
+}
+
+
+@media(max-width:992px) {
+    .LoginPage1 .leftPanel img {
+        width: 100%;
+        height: 400px;
+    }
+}
