@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wallet Management</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <header class="TopnavBackbg mb-4">
+            <div class="container">
+                <nav class="topNavBar">
+                    <label class="logo">
+                        <img src="../Images/logo.png" alt="logo" class="brand-image img-circle">
+                    </label>
+                    <ul>
+                        <li class="active">
+                            Home
+                        </li>
+                        <li class="showtoggle">
+                            User & Roles
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li class="hover-me">
+                                        <a href="#">Role</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <div class="sub-menu-2">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Create Role</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Role List</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="hover-me">
+                                        <a href="#">User</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <div class="sub-menu-2">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Create User</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">User List</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="hover-me">
+                                        <a href="#">Permission</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <div class="sub-menu-2">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Permission Role</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Permission List</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="showtoggle">
+                            Trasaction
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Wallet</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">Transaction</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="showtoggle">
+                            Services
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Service provider</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">Api Service</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">Api User mgt</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">Package mgt</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="showtoggle">
+                            Miscellaneous
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Account</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">Complaint</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">Notice</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="showtoggle">
+                            <img src="../Images/adminlogo.jpg" alt="adminlogo">
+                            Admin
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <span>Admin@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">View Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="WalletManagement">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mb-3">
+                        <div class="userallet-list">
+                            User List
+                        </div>
+                    </div>
+                    <hr class="mb-5">
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="TopWarapperInfo">
+                            <span class="TEntries">Show</span>
+                            <select name="wentries" id="wallet-entry" class="dropdownMenu">
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="All">All</option>
+                            </select>
+                            <span class="TEntries">entries</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="DocumentFile">
+                            <button type="button" class="FileType">CSV</button>
+                            <button type="button" class="FileType">Excel</button>
+                            <button type="button" class="FileType">Print</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="searchBar">
+                            <label class="searchbtn">Search:</label>
+                            <input type="search" name="searchItem" id="searchItem">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table id="example1" class="table table-bordered table-responsive dataTable no-footer dtr-inline" aria-describedby="example1_info">
+                            <thead>
+                                <tr>
+                                    <th
+                                        class="sorting sorting_asc"
+                                        tabindex="0"
+                                        aria-controls="example1"
+                                        rowspan="1"
+                                        colspan="1"
+                                        aria-sort="ascending"
+                                        aria-label="User: activate to sort column descending"
+                                    >User</th>
+                                    <th
+                                        class="sorting"
+                                        tabindex="0"
+                                        aria-controls="example1"
+                                        rowspan="1"
+                                        colspan="1"
+                                        aria-label="Balance: activate to sort column ascending"
+                                    >Balance</th>
+                                    <th
+                                        class="sorting"
+                                        tabindex="0"
+                                        aria-controls="example1"
+                                        rowspan="1"
+                                        colspan="1"
+                                        aria-label="Mobile: activate to sort column ascending"
+                                    >Mobile</th>
+                                    <th
+                                        class="sorting"
+                                        tabindex="0"
+                                        aria-controls="example1"
+                                        rowspan="1"
+                                        colspan="1"
+                                        aria-label="KYC: activate to sort column ascending"
+                                    >KYC</th>
+                                    <th
+                                        class="sorting_disabled"
+                                        rowspan="1"
+                                        colspan="1"
+                                        aria-label="Action"
+                                    >Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td class="sorting_1 dtr-control">
+                                        Admin
+                                        <br>
+                                        admin@gmail.com
+                                    </td>
+                                    <td>5,000,000.00</td>
+                                    <td>9986546544</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('2', 'Admin')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1 dtr-control">
+                                        Aimee Saunders
+                                        <br>
+                                        gonybo@mailinator.com
+                                    </td>
+                                    <td>72,500.00</td>
+                                    <td>7878787878</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('101', 'Aimee Saunders')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1 dtr-control">
+                                        Brent Arnold
+                                        <br>
+                                        behoh@mailinator.com
+                                    </td>
+                                    <td>8,700.00</td>
+                                    <td>7788775847</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('112', 'Brent Arnold')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1 dtr-control">
+                                        Cara Yates
+                                        <br>
+                                        rabinrn100@gmail.com
+                                    </td>
+                                    <td>-3,800.00</td>
+                                    <td>7878989898</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('104', 'Cara Yates')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1 dtr-control">
+                                        Ciaran Dudley
+                                        <br>
+                                        sysewuxom@mailinator.com
+                                    </td>
+                                    <td>7,600.00</td>
+                                    <td>1010101010</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('109', 'Ciaran Dudley')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1 dtr-control">
+                                        Donovanbgcv
+                                        <br>
+                                        vacakihu@mailinator.com
+                                    </td>
+                                    <td>0.00</td>
+                                    <td>7874193825</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('334', 'Donovanbgcv')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1 dtr-control">
+                                        Iliana Mckinney
+                                        <br>
+                                        afdgahg@gmail.com
+                                    </td>
+                                    <td>-10.00</td>
+                                    <td>7878787471</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('110', 'Iliana Mckinney')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1 dtr-control">
+                                        Len Vincent
+                                        <br>
+                                        qizajeqeg@mailinator.com
+                                    </td>
+                                    <td>0.00</td>
+                                    <td>+1 (648) 6</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('113', 'Len Vincent')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="sorting_1 dtr-control">
+                                        Lyle Clay
+                                        <br>
+                                        hosak@mailinator.com
+                                    </td>
+                                    <td>0.00</td>
+                                    <td>7788787877</td>
+                                    <td>
+                                        <h6 class="text-warning text-bold">Unverified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('111', 'Lyle Clay')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="sorting_1 dtr-control">
+                                        Rogan Stone
+                                        <br>
+                                        bobipif@mailinator.com
+                                    </td>
+                                    <td>0.00</td>
+                                    <td>8877445566</td>
+                                    <td>
+                                        <h6 class="text-success text-bold">Verified</h6>
+                                    </td>
+                                    <td>
+                                        <a
+                                            class="btn btn-dark"
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#addfund"
+                                            onclick="updateUserId('335', 'Rogan Stone')"
+                                        >
+                                            <small>Add/Deduct Fund</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div
+                            class="dataTables_info"
+                            id="example1_info"
+                            role="status"
+                            aria-live="polite"
+                        >
+                            Showing 1 to 10 of 12 entries
+                        </div>
+                        <div class="dataTables_paginate paging_simple_numbers float-end" id="example1_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button page-item previous disabled" id="example1_previous">
+                                    <a
+                                        href="#"
+                                        aria-controls="example1"
+                                        data-dt-idx="0"
+                                        tabindex="0"
+                                        class="page-link"
+                                    >Previous</a>
+                                </li>
+                                <li class="paginate_button page-item active">
+                                    <a
+                                        href="#"
+                                        aria-controls="example1"
+                                        data-dt-idx="1"
+                                        tabindex="0"
+                                        class="page-link"
+                                    >1</a>
+                                </li>
+                                <li class="paginate_button page-item ">
+                                    <a
+                                        href="#"
+                                        aria-controls="example1"
+                                        data-dt-idx="2"
+                                        tabindex="0"
+                                        class="page-link"
+                                    >2</a>
+                                </li>
+                                <li class="paginate_button page-item next" id="example1_next">
+                                    <a
+                                        href="#"
+                                        aria-controls="example1"
+                                        data-dt-idx="3"
+                                        tabindex="0"
+                                        class="page-link"
+                                    >Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../style.js"></script>
+</body>
+</html>

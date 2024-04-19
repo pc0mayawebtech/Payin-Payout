@@ -207,6 +207,7 @@
                                                             type="tel"
                                                             name="mobile"
                                                             id="mobile"
+                                                            oninput="this.value = this.value.replace(/\D/g, '').slice(0, 10)"
                                                             placeholder="Enter Mobile Number"
                                                             class="form-control"
                                                         >
@@ -654,7 +655,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="Submitbtn">
+                                <button type="submit" class="subbtn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <script src="./style.js"></script>
+            <script src="../../style.js"></script>
         </body>
     </html>
