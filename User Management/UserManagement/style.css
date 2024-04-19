@@ -26,23 +26,90 @@
     display: inline-flex;
     float: right;
     color: #fff;
+    padding: 0px;
 }
 
 .topNavBar ul li {
     width: 160px;
-    margin: 10px 0px;
+    line-height: 30px;
     padding: 15px;
-}
-
-.topNavBar ul li a {
-    text-decoration: none;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .active,
-.topNavBar ul li a:hover {
+.topNavBar ul li:hover {
     color: cornflowerblue !important;
     font-weight: 600;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.topNavBar .sub-menu-1 .hover-me {
+    margin-bottom: -8px !important;
+}
+
+.topNavBar .showtoggle img{
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.topNavBar ul li .sub-menu-1 {
+    position: absolute;
+    background: #000;
+    margin-top: 0px;
+    margin-left: -15px;
+    z-index: 999;
+}
+
+.topNavBar ul li .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+    padding: 8px;
+}
+
+.topNavBar ul li .sub-menu-1 ul li {
+    width: 150px;
+    padding: 6px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-bottom: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topNavBar ul li .sub-menu-1 ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    display: block;
+}
+
+.topNavBar ul li .sub-menu-1 ul li a:hover {
+    color: cornflowerblue;
+    font-weight: 600;
+}
+
+.topNavBar ul li .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+    margin-bottom: -8px !important;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-me .sub-menu-2 {
+    position: absolute;
+    margin-top: 120px;
+    left: 180px;
+    background-color: #000;
 }
 
 .UserMgt .Modulespath .routes {
