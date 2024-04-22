@@ -108,73 +108,73 @@
     background-color: #000;
 }
 
-.WalletManagement .userallet-list {
+.AccountManagement .Actmgt-list {
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.WalletManagement .TopWarapperInfo .TEntries {
+.AccountManagement .textInfo {
+    color: #17a2b8;
+    font-weight: 500;
+}
+
+.AccountManagement .labelWrapper .label-control {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.AccountManagement .labelWrapper .Avgamount {
     font-size: 1rem;
     font-weight: 600;
 }
 
-.WalletManagement .TopWarapperInfo .dropdownMenu {
-    padding: 0.2rem;
-    background-color: cornflowerblue;
+.AccountManagement .formWrapper .formControl {
+    width: 100%;
+    padding: 0.4rem 0.9rem;
     border: none;
     outline: none;
-    border-radius: 3px;
+    box-shadow: 0px 0px 0.3px 0.5px #5e5e5e;
+    border-radius: 6px;
 }
 
-.WalletManagement .TopWarapperInfo .dropdownMenu:focus {
-    border: 1px solid cornflowerblue;
+.AccountManagement .formWrapper .formControl:focus {
+    border: 1px solid lightskyblue;
 }
 
-.WalletManagement .DocumentFile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
+.Submitbtn {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 0 solid rgba(0, 0, 0, 0.125);
 }
 
-.WalletManagement .DocumentFile .FileType {
-    padding: 0.4rem 0.8rem;
-    border: none;
-    outline: none;
+.Submitbtn .subbtn {
     background-color: #000;
     color: #ffffff;
-    border-radius: 4px;
-}
-
-.WalletManagement .DocumentFile .FileType:hover {
-    background-color: cornflowerblue;
-    color: #ffffff;
+    padding: 0.5rem 0.9rem;
     font-weight: 600;
-}
-
-.WalletManagement .searchBar {
-    float: right;
-}
-
-.WalletManagement .searchBar .searchbtn {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.WalletManagement .searchBar input[type="search"] {
-    padding: 0.4rem 0.9rem;
-    outline: none;
-    border-radius: 4px;
+    border-radius: 6px;
     border: none;
-    box-shadow: 0px 0.5px 1.5px 0.5px #5e5e5e;
-    margin-left: 4px;
+    outline: none;
+    font-size: 0.9rem;
+    transition-property: all .5s;
 }
 
-.WalletManagement .dataTables_info {
-    font-size: 1rem;
-    font-weight: 600;
+.Submitbtn .subbtn:hover {
+    width: 20%;
+    background-color: #17a2b8;
+    padding: 0.6rem 0.9rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.WalletManagement tbody>tr:nth-of-type(odd)>* {
+.AccountManagement .AccCharges .ChargeAmt {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.AccountManagement .dotsAvatarlogo {
+    width: 2.1rem;
+}
+
+.AccountManagement tbody>tr:nth-of-type(odd)>* {
     --bs-table-bg-type: #a9daf0;
 }

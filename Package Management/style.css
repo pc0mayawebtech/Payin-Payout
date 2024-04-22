@@ -108,73 +108,96 @@
     background-color: #000;
 }
 
-.WalletManagement .userallet-list {
+.PackageManagement .pkgmgt-list {
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.WalletManagement .TopWarapperInfo .TEntries {
+.PackageManagement .textInfo {
+    color: #17a2b8;
+    font-weight: 500;
+}
+
+.PackageManagement .pkgInfo .labelWrapper .label-control {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.PackageManagement .pkgInfo .formWrapper .formControl {
+    width: 100%;
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 0.3px 0.5px #5e5e5e;
+    border-radius: 6px;
+}
+
+.PackageManagement .pkgInfo .formWrapper .formControl:focus {
+    border: 1px solid lightskyblue;
+}
+
+.PackageManagement .variousCharges .ChargeAmt {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.PackageManagement .labelWrapper .Avgamount {
     font-size: 1rem;
     font-weight: 600;
 }
 
-.WalletManagement .TopWarapperInfo .dropdownMenu {
-    padding: 0.2rem;
-    background-color: cornflowerblue;
+.PackageManagement .formWrapper .formControl {
+    width: 100%;
+    padding: 0.4rem 0.9rem;
     border: none;
     outline: none;
-    border-radius: 3px;
+    box-shadow: 0px 0px 0.3px 0.5px #5e5e5e;
+    border-radius: 6px;
 }
 
-.WalletManagement .TopWarapperInfo .dropdownMenu:focus {
-    border: 1px solid cornflowerblue;
+.PackageManagement .formWrapper .formControl:focus {
+    border: 1px solid lightskyblue;
 }
 
-.WalletManagement .DocumentFile {
+.PackageManagement .CrudOption i {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    padding-top: 2.4rem;
 }
 
-.WalletManagement .DocumentFile .FileType {
-    padding: 0.4rem 0.8rem;
-    border: none;
-    outline: none;
+.PackageManagement .CrudOption .btn {
+    width: 100%;
+}
+
+.PackageManagement .CrudOption .btn:hover {
     background-color: #000;
     color: #ffffff;
-    border-radius: 4px;
+    font-weight: 700;
 }
 
-.WalletManagement .DocumentFile .FileType:hover {
-    background-color: cornflowerblue;
+.Submitbtn {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 0 solid rgba(0, 0, 0, 0.125);
+}
+
+.Submitbtn .subbtn {
+    background-color: #000;
     color: #ffffff;
+    padding: 0.5rem 0.9rem;
     font-weight: 600;
-}
-
-.WalletManagement .searchBar {
-    float: right;
-}
-
-.WalletManagement .searchBar .searchbtn {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.WalletManagement .searchBar input[type="search"] {
-    padding: 0.4rem 0.9rem;
-    outline: none;
-    border-radius: 4px;
+    border-radius: 6px;
     border: none;
-    box-shadow: 0px 0.5px 1.5px 0.5px #5e5e5e;
-    margin-left: 4px;
+    outline: none;
+    font-size: 0.9rem;
+    transition-property: all .5s;
 }
 
-.WalletManagement .dataTables_info {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.WalletManagement tbody>tr:nth-of-type(odd)>* {
-    --bs-table-bg-type: #a9daf0;
+.Submitbtn .subbtn:hover {
+    width: 20%;
+    background-color: #17a2b8;
+    padding: 0.6rem 0.9rem;
+    transition: all 0.3s ease-in-out;
 }
