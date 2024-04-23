@@ -53,3 +53,4 @@ submenuItems.forEach(item => {
 window.addEventListener('click', () => {
     hideSubMenus();
 });
+

@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.TopnavBackbg {
+    background-color: #000;
+    height: 70px;
+}
+
+.topNavBar .logo .brand-image {
+    width: 60px;
+    max-height: 40px;
+    margin-top: 1rem;
+}
+
+.topNavBar .logo .img-circle {
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.topNavBar ul {
+    text-align: center;
+    display: inline-flex;
+    float: right;
+    color: #fff;
+    padding: 0px;
+}
+
+.topNavBar ul li {
+    width: 160px;
+    line-height: 30px;
+    padding: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.active,
+.topNavBar ul li:hover {
+    color: cornflowerblue !important;
+    font-weight: 600;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.topNavBar .showtoggle img {
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.topNavBar ul li .sub-menu-1 {
+    position: absolute;
+    background: #000;
+    margin-top: 0px;
+    margin-left: -15px;
+    z-index: 999;
+}
+
+.topNavBar ul li .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+    padding: 8px;
+}
+
+.topNavBar ul li .sub-menu-1 ul li {
+    width: 150px;
+    padding: 6px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-bottom: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topNavBar ul li .sub-menu-1 ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    display: block;
+}
+
+.topNavBar ul li .sub-menu-1 ul li a:hover {
+    color: cornflowerblue;
+    font-weight: 600;
+}
+
+.topNavBar ul li .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+    margin-bottom: -8px !important;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-me .sub-menu-2 {
+    position: absolute;
+    margin-top: 120px;
+    left: 180px;
+    background-color: #000;
+}
+
+.Notice .NoticeHead {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.Notice .textInfo {
+    color: #17a2b8;
+    font-weight: 500;
+}
+
+.Notice .labelWrapper .Avgamount {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Notice .formWrapper .formControl {
+    width: 100%;
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 0.3px 0.5px #5e5e5e;
+    border-radius: 6px;
+}
+
+.Notice .formWrapper .formControl:focus {
+    border: 1px solid lightskyblue;
+}
+
+.Notice .Submitbtn {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 0 solid rgba(0, 0, 0, 0.125);
+}
+
+.Notice .Submitbtn .subbtn {
+    background-color: #000;
+    color: #ffffff;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    transition-property: all .5s;
+}
+
+.Notice .Submitbtn .subbtn:hover {
+    width: 20%;
+    background-color: #17a2b8;
+    padding: 0.6rem 0.9rem;
+    transition: all 0.3s ease-in-out;
+}
